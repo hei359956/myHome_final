@@ -18,6 +18,7 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link href="css/login_overlay.css" rel='stylesheet' type='text/css' />
 	<link href="css/style6.css" rel='stylesheet' type='text/css' />
@@ -92,6 +93,13 @@
 										<label class="form-check-label" for="exampleCheck1">Check me out</label>
 									</div>
 									<button type="submit" class="btn btn-primary submit mb-4">Sign In</button>
+									<button id="myButton" type="submit" class="btn btn-primary submit mb-4" >Sign Up</button>
+
+									<script type="text/javascript">
+									document.getElementById("myButton").onclick = function () {
+										location.href = "Pancha.html";
+									};
+									</script>
 
 								</form>
 							</div>
@@ -1612,7 +1620,13 @@
 							<p>Phone : +41 27 220 45 80</p>
 							<p>Email :
 								<a href="mailto:info@example.com">MyHOME@myhome.com</a>
-							<div class="mapouter"><div class="gmap_canvas"><iframe width="280" height="280" id="gmap_canvas" src="https://maps.google.com/maps?q=Schwarztorstrasse%2036,%203007%20Bern,%20Switzerland&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style></style><style>.gmap_canvas</style></div></div>
+							<div class="mapouter"><div class="gmap_canvas"><iframe width="280" height="280" id="gmap_canvas" src="https://maps.google.com/maps?q=Schwarztorstrasse%2036,%203007%20Bern,%20Switzerland&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+							<a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
+							<br>
+							<!-- 
+							<style>.gmap_canvas</style>-->
+							</div></div>
+
 							</p>
 						</div>
 					</div>
@@ -1645,7 +1659,7 @@
 					</div>
 					<div class="footer-text">
 						<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
-						<form action="#" method="post">
+						<form action="" method="post">
 							<input class="form-control" type="email" name="Email" placeholder="Enter your email..." required="">
 							<button class="btn1">
 								<i class="far fa-envelope" aria-hidden="true"></i>
@@ -1679,9 +1693,9 @@
 				</div>
 				<div class="modal-body text-center p-5 mx-auto mw-100">
 					<h6>Join our newsletter and get</h6>
-					<h3>50% Off for your first Pair of Eye wear</h3>
+					<h3>50% Off for your first Pair of Eyewear</h3>
 					<div class="login newsletter">
-						<form action="#" method="post">
+						<form action="" method="post">
 							<div class="form-group">
 								<label class="mb-2">Email address</label>
 								<input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="" required="">
@@ -1689,7 +1703,8 @@
 							<button type="submit" class="btn btn-primary submit mb-4">Get 50% Off</button>
 						</form>
 						<p class="text-center">
-							<a href="#">No thanks I want to pay full Price</a>
+							<a href="">No thanks I want to pay full Price</a>
+						
 						</p>
 					</div>
 				</div>
@@ -1824,9 +1839,7 @@
             						 };
             						*/
 
-            $().UItoTop({
-                easingType: 'easeOutQuart'
-            });
+		$().UItoTop({easingType: 'easeOutQuart'});
 
         });
     </script>
@@ -1835,5 +1848,4 @@
 	<script src="js/bootstrap.js"></script>
 	<!-- js file -->
 </body>
-
 </html>
