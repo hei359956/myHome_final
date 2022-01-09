@@ -96,9 +96,9 @@
 									<button id="myButton" type="submit" class="btn btn-primary submit mb-4" >Sign Up</button>
 
 									<script type="text/javascript">
-									document.getElementById("myButton").onclick = function () {
-										location.href = "Pancha.html";
-									};
+										document.getElementById("myButton").onclick = function () {
+											location.href = "signup.html";
+										};
 									</script>
 
 								</form>
@@ -1693,14 +1693,14 @@
 				</div>
 				<div class="modal-body text-center p-5 mx-auto mw-100">
 					<h6>Join our newsletter and get</h6>
-					<h3>50% Off for your first Pair of Eyewear</h3>
+					<h3>20% Off for your first Purchase</h3>
 					<div class="login newsletter">
 						<form action="" method="post">
 							<div class="form-group">
 								<label class="mb-2">Email address</label>
 								<input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="" required="">
 							</div>
-							<button type="submit" class="btn btn-primary submit mb-4">Get 50% Off</button>
+							<button type="submit" class="btn btn-primary submit mb-4">Get 20% Off</button>
 						</form>
 						<p class="text-center">
 							<a href="">No thanks I want to pay full Price</a>
@@ -1713,8 +1713,15 @@
 		</div>
 	</div>
 	<script>
-		$(document).ready(function () {
-			$("#myModal").modal();
+		$(document).ready(function() {
+			$("#myModal").modal("show");
+
+			$("#myBtn").click(function() {
+				$("#myModal").modal("hide");
+			});
+
+			$("#myModal").on('hide.bs.modal', function() {
+			});
 		});
 	</script>
 	<!-- // modal -->
