@@ -1,20 +1,10 @@
 /*!
  * mincart
- * The Mini Cart is a great way to improve your PayPal shopping cart integration.
- *
- * @version 3.0.6
- * @author Jeff Harrell <https://github.com/jeffharrell/>
- * @url http://www.mincartjs.com/
- * @license MIT <https://github.com/jeffharrell/mincart/raw/master/LICENSE.md>
  */
 
 ;(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
-
 //
-// The shims in this file are not fully implemented shims for the ES5
-// features, but do work for the particular use cases there is in
-// the other modules.
 //
 
 var toString = Object.prototype.toString;
