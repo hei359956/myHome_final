@@ -1893,7 +1893,7 @@ var defaults = module.exports = {
 
     parent: (typeof document !== 'undefined') ? document.body : null,
 
-    action: 'checkout.html',
+    action: 'billing_info.html',
 
     target: '',
 
@@ -1905,7 +1905,7 @@ var defaults = module.exports = {
 
     strings: {
         button: 'Check Out',
-        subtotal: 'Subtotal:',
+        subtotal: 'Total plus fees (50):  ',
         discount: 'Discount:',
         empty: 'Your shopping cart is empty'
     }
@@ -2032,7 +2032,7 @@ var parser = {
         return value;
     },
     amount: function (value) {
-        return parseFloat(value) || 0;
+        return parseFloat(value+50) || 0;
     },
     href: function (value) {
         if (value) {
