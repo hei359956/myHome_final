@@ -1905,7 +1905,7 @@ var defaults = module.exports = {
 
     strings: {
         button: 'Check Out',
-        subtotal: 'Total plus fees (50):  ',
+        subtotal: 'Total plus fees ($50):  ',
         discount: 'Discount:',
         empty: 'Your shopping cart is empty'
     }
