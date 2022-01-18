@@ -204,3 +204,7 @@ The Web application can be accessed over the browser by using the following addr
 
 #### License
 - [Apache License, Version 2.0](blob/master/LICENSE)
+
+$ git rm readme.md
+$ git commit
+$ git push
